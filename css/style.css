@@ -12,7 +12,7 @@ body {
 }
 /* solo temporaneo perchè non ha contenuto */
 body >*, .main-container>*, .main-content-container>* {
-    min-height: 100px;
+    min-height: 50px;
     min-width: 100px;
     border: 1px solid red;
 }
@@ -39,11 +39,6 @@ body >*, .main-container>*, .main-content-container>* {
     overflow: auto;
 
 }
-.upgrade {
-    background-color: rgb(8, 11, 18);
-    height: 80px;
-    flex-shrink: 0;
-}
 
 .play-nav-container {
     background-color: rgb(40, 40, 40);
@@ -51,3 +46,32 @@ body >*, .main-container>*, .main-content-container>* {
     flex-shrink: 0;
 }
 
+/* UPGRADE */
+.upgrade {
+    background-color: rgb(8, 11, 18);
+    height: 60px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.upgrade-button  {
+    color: white;
+    border: 1px solid white;
+    border-radius: 30px;
+    background-color: rgb(8, 11, 18);
+    width: 200px;
+    height: 40px;
+    margin-right: 10px;
+}
+.upgrade-button:hover {
+    width: 220px;
+    height: 45px;
+}
+.ex-1-square {
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+    transition: 1s;} tempo di transizione
+.ex-1-square:hover {
+    background: red;}
