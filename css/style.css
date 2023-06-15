@@ -6,4 +6,48 @@
 body {
     height: 100vh;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    color: white;
 }
+/* solo temporaneo perchè non ha contenuto */
+body >*, .main-container>*, .main-content-container>* {
+    min-height: 100px;
+    min-width: 100px;
+    border: 1px solid red;
+}
+.main-container {
+    flex-grow: 1;
+    overflow: auto;
+    display: flex;
+}
+.main-content-container {
+    flex-grow: 1;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+}
+.nav-bar {
+    background-color: black;
+    width: 200px;
+    overflow: auto;
+    flex-shrink: 0;
+}
+.body-content {
+    background-color: rgb(20, 25, 34);
+    flex-grow: 1;
+    overflow: auto;
+
+}
+.upgrade {
+    background-color: rgb(8, 11, 18);
+    height: 80px;
+    flex-shrink: 0;
+}
+
+.play-nav-container {
+    background-color: rgb(40, 40, 40);
+    height: 150px;
+    flex-shrink: 0;
+}
+
