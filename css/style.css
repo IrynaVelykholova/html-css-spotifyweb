@@ -14,12 +14,7 @@ body {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
-/* solo temporaneo perchè non ha contenuto */
-body >*, .main-container>*, .main-content-container>* {
-    min-height: 50px;
-    min-width: 100px;
-    border: 1px solid red;
-}
+
 .main-container {
     flex-grow: 1;
     overflow: auto;
@@ -149,13 +144,17 @@ body >*, .main-container>*, .main-content-container>* {
 }
 .container p {
     color: var(--text-grey);
+    margin-bottom: 20px;
 }
     /* artisti */
 .artisti img {
     border-radius: 50%;
 }
 
-
+/* NAV-BAR */
+.logo-small {
+    display: none;
+}
 @media screen and (max-width: 1100px) {
     .col {
         flex-basis: calc((100% / 4) - 10px);
