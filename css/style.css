@@ -116,6 +116,31 @@ body >*, .main-container>*, .main-content-container>* {
     
 }
 .images {
-    width: 150px;
-    height: 150px;
+    position: relative;
 }
+.images img {
+    width: 270px;
+    height: 270px;
+}
+.images img:hover {
+
+}
+.image-hover {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.card h4 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.card p {
+    color: var(--text-grey);
+    text-align: center;
+}
+
+
