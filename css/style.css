@@ -97,3 +97,25 @@ body >*, .main-container>*, .main-content-container>* {
     color: white;
     text-decoration: none;
 }
+
+    /* recently played */
+.container {
+    margin-left: 15px;
+}
+.container h2 {
+    margin-bottom: 20px;
+}
+.row {
+    width: 100%;
+    display: flex;
+    /* gap: 20px; */
+}
+.col {
+    flex-grow: 1;
+    flex-basis: calc(100% / 6);
+    
+}
+.images {
+    width: 150px;
+    height: 150px;
+}
